@@ -20,8 +20,7 @@ const Maincontent = ({ title, date, url, mediaType, description }) => {
       <Title title={title} />
       <p className='text-center'>{date}</p>
       <div className='flex justify-around'>
-        <Image image={url} />
-        <Video video={url} />
+        {mediaType === 'image' ? <Image image={url} /> : <Video video={url} />}
         <Description description={description} />
       </div>
     </div>
