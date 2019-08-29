@@ -33,7 +33,7 @@ const Maincontent = () => {
     );
 
   return (
-    <div className='flex flex-col align-center h-auto'>
+    <div className='flex flex-col align-center h-auto m-6'>
       <Title title={data.title} />
       <p className='text-center'>{data.date}</p>
 

@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 
-const Video = () => {
+const Video = ({ video }) => {
   return (
     <div>
-      <p>Video Here</p>
+      <ReactPlayer url={video} playing controls width='80%' />
     </div>
   );
 };
