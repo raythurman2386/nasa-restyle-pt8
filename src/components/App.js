@@ -26,13 +26,6 @@ function App() {
 
   console.log(data);
 
-  // if (!data)
-  //   return (
-  //     <div>
-  //       <p>Loading . . .</p>
-  //     </div>
-  //   );
-
   return (
     <div className='h-screen'>
       <Header />
@@ -41,7 +34,7 @@ function App() {
         url={data.url}
         date={data.date}
         mediaType={data.media_type}
-        description={data.description}
+        description={data.explanation}
       />
       <Footer />
     </div>
