@@ -18,9 +18,11 @@ const Maincontent = () => {
   return (
     <div className='flex flex-col align-center h-screen'>
       <Title />
-      <Image />
-      <Video />
-      <Description />
+      <div className='flex justify-around'>
+        <Image />
+        <Video />
+        <Description />
+      </div>
     </div>
   );
 };
