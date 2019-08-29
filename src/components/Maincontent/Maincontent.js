@@ -8,12 +8,12 @@ import Description from './Description/Description';
 
 const Maincontent = ({ title, date, url, mediaType, description }) => {
   // try to implement loader here
-  if (!data)
-    return (
-      <div>
-        <p>Loading . . .</p>
-      </div>
-    );
+  // if (!data)
+  //   return (
+  //     <div>
+  //       <p>Loading . . .</p>
+  //     </div>
+  //   );
 
   return (
     <div className='flex flex-col align-center h-screen'>

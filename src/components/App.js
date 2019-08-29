@@ -14,7 +14,7 @@ import './output.css';
 
 function App() {
   // Data for the axios call
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   // useEffect to grab the data
   useEffect(() => {
@@ -25,6 +25,13 @@ function App() {
   }, []);
 
   console.log(data);
+
+  // if (!data)
+  //   return (
+  //     <div>
+  //       <p>Loading . . .</p>
+  //     </div>
+  //   );
 
   return (
     <div className='h-screen'>
