@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import component files
-import TitleImg from './Title/TitleImg';
+import Title from './Title/Title';
 import Image from './Image/Image';
 import Video from './Video/Video';
 import Description from './Description/Description';
@@ -17,7 +17,7 @@ const Maincontent = () => {
 
   return (
     <div className='flex flex-col align-center h-screen'>
-      <TitleImg />
+      <Title />
       <Image />
       <Video />
       <Description />
