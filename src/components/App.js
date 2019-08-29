@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Import API Key
+import apiKey from '../private/private';
 // Tailwind Styles
 import './output.css';
 
@@ -11,10 +13,12 @@ function App() {
   // useEffect to grab the data
   useEffect(() => {
     axios
-      .get()
-      .then()
-      .catch();
-  });
+      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+      .then(res => setData(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
+  console.log(data);
 
   return (
     <div className='bg-blue-700'>
