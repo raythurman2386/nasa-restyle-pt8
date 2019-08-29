@@ -33,17 +33,16 @@ const Maincontent = () => {
     );
 
   return (
-    <div className='flex flex-col align-center h-screen'>
+    <div className='flex flex-col align-center h-auto'>
       <Title title={data.title} />
       <p className='text-center'>{data.date}</p>
-      <div className='flex justify-around'>
-        {data.media_type === 'image' ? (
-          <Image image={data.url} />
-        ) : (
-          <Video video={data.url} />
-        )}
-        <Description description={data.explanation} />
-      </div>
+
+      {data.media_type === 'image' ? (
+        <Image image={data.url} />
+      ) : (
+        <Video video={data.url} />
+      )}
+      <Description description={data.explanation} />
     </div>
   );
 };
