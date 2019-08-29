@@ -1,12 +1,18 @@
 import React from 'react';
 
 const Description = () => {
-  <div className='flex justify-center h-screen'>
-    <p>
-      Read through the instructions in the README.md file to build your NASA
-      app! Have fun 🚀!
-    </p>
-  </div>;
+  return (
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit placerat felis,
+        ligula phasellus semper nam suscipit quisque augue blandit fames, non
+        consequat justo habitant euismod eu mauris dignissim. Aliquam quis cum
+        aptent neque laoreet dui auctor, mattis velit ullamcorper nulla
+        condimentum ad per varius, at enim mollis accumsan sociosqu posuere. Mus
+        urna integer tempor tellus, vivamus dictumst diam, duis maecenas eros.
+      </p>
+    </div>
+  );
 };
 
 export default Description;
