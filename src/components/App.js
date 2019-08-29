@@ -29,7 +29,13 @@ function App() {
   return (
     <div className='h-screen'>
       <Header />
-      <Maincontent />
+      <Maincontent
+        title={data.title}
+        url={data.url}
+        date={data.date}
+        mediaType={data.media_type}
+        description={data.description}
+      />
       <Footer />
     </div>
   );
