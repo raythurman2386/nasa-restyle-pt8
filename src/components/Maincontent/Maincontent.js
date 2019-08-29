@@ -1,6 +1,14 @@
 import React from 'react';
 
-const Maincontent = () => {
+const Maincontent = ({data}) => {
+  // try to implement loader here
+  if (!data)
+    return (
+      <div>
+        <p>Loading . . .
+      </div>
+    );
+
   return (
     <div className='flex justify-center h-screen'>
       <p>
