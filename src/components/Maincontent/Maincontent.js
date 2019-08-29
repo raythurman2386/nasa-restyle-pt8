@@ -10,19 +10,17 @@ import Description from './Description/Description';
 // Import API Key
 import { apiKey } from '../../private/private';
 
-const Maincontent = () => {
+const Maincontent = ({ date }) => {
   // Data for the axios call
   const [data, setData] = useState({});
 
   // useEffect to grab the data
   useEffect(() => {
     axios
-      .get(
-        `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=2019-08-25`,
-      )
+      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`)
       .then(res => setData(res.data))
       .catch(err => console.log(err));
-  }, []);
+  }, [date]);
 
   console.log(data);
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // import components
 import Header from './Header/Header';
@@ -9,10 +9,13 @@ import Footer from './Footer/Footer';
 import './output.css';
 
 function App() {
+  // Hold state for the date
+  const [date, setDate] = useState('2019-08-25');
+
   return (
     <div className='h-screen'>
-      <Header />
-      <Maincontent />
+      <Header setDate={setDate} />
+      <Maincontent date={date} setDate={setDate} />
       <Footer />
     </div>
   );
