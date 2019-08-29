@@ -18,6 +18,7 @@ const Maincontent = ({ title, date, url, mediaType, description }) => {
   return (
     <div className='flex flex-col align-center h-screen'>
       <Title title={title} />
+      <p className='text-center'>{date}</p>
       <div className='flex justify-around'>
         <Image image={url} />
         <Video video={url} />
