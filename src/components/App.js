@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // import components
+import Header from './Header/Header';
 
 // Import API Key
 import { apiKey } from '../private/private';
@@ -24,7 +25,8 @@ function App() {
   console.log(data);
 
   return (
-    <div className='bg-blue-700'>
+    <div className=''>
+      <Header />
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
