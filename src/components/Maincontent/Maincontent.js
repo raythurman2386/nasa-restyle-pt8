@@ -17,7 +17,9 @@ const Maincontent = () => {
   // useEffect to grab the data
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+      .get(
+        `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=2019-08-25`,
+      )
       .then(res => setData(res.data))
       .catch(err => console.log(err));
   }, []);

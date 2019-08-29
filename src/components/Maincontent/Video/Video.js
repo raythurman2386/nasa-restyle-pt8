@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 
 const Video = ({ video }) => {
   return (
-    <div className='my-6'>
+    <div className='flex justify-center my-6'>
       <ReactPlayer url={video} playing controls width='80%' />
     </div>
   );
