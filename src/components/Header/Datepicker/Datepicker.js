@@ -1,10 +1,18 @@
 import React from 'react';
+import DatePicker from 'react-datepicker';
 
-const Datepicker = ({ setDate }) => {
+// Styles for datepicker
+import 'react-datepicker/dist/react-datepicker.css';
+
+const Datepicker = ({ date, setDate }) => {
   return (
-    <div className='flex justify-center my-6'>
-      <input onChange={event => setDate(event.target.value)} type='date' />
-    </div>
+    <form className='flex my-6'>
+      <input
+        placeholder={date}
+        onChange={event => setDate(event.target.value)}
+        type={'date'}
+      />
+    </form>
   );
 };
 
