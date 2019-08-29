@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// import components
+
 // Import API Key
-import apiKey from '../private/private';
+import { apiKey } from '../private/private';
+
 // Tailwind Styles
 import './output.css';
 
