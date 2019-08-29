@@ -1,5 +1,11 @@
 import React from 'react';
 
+// Import component files
+import Title from './Title/Title';
+import Image from './Image/Image';
+import Video from './Video/Video';
+import Description from './Description/Description';
+
 const Maincontent = ({ data }) => {
   // try to implement loader here
   if (!data)
