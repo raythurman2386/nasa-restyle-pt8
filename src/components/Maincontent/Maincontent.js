@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Maincontent = ({data}) => {
+const Maincontent = ({ data }) => {
   // try to implement loader here
   if (!data)
     return (
       <div>
-        <p>Loading . . .
+        <p>Loading . . .</p>
       </div>
     );
 
