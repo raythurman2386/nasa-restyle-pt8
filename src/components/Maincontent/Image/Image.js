@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Image = () => {
+const Image = ({ image }) => {
   return (
     <div>
-      <p>Image Here</p>
+      <img src={image} alt='NASA Images' />
     </div>
   );
 };
