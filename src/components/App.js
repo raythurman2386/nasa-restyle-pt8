@@ -3,6 +3,7 @@ import axios from 'axios';
 
 // import components
 import Header from './Header/Header';
+import Maincontent from './Maincontent/Maincontent';
 import Footer from './Footer/Footer';
 
 // Import API Key
@@ -28,10 +29,7 @@ function App() {
   return (
     <div className=''>
       <Header />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <Maincontent />
       <Footer />
     </div>
   );
