@@ -22,6 +22,8 @@ const Maincontent = () => {
       .catch(err => console.log(err));
   }, []);
 
+  console.log(data);
+
   // try to implement loader here
   if (!data)
     return (
@@ -35,7 +37,7 @@ const Maincontent = () => {
       <Title title={data.title} />
       <p className='text-center'>{data.date}</p>
       <div className='flex justify-around'>
-        {data.mediaType === 'image' ? (
+        {data.media_type === 'image' ? (
           <Image image={data.url} />
         ) : (
           <Video video={data.url} />
