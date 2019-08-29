@@ -27,7 +27,7 @@ function App() {
   console.log(data);
 
   return (
-    <div className=''>
+    <div className='h-screen'>
       <Header />
       <Maincontent />
       <Footer />
