@@ -29,7 +29,7 @@ function App() {
   return (
     <div className='h-screen'>
       <Header />
-      <Maincontent data={data} />
+      <Maincontent />
       <Footer />
     </div>
   );
