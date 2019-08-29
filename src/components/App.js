@@ -3,6 +3,7 @@ import axios from 'axios';
 
 // import components
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 // Import API Key
 import { apiKey } from '../private/private';
@@ -31,6 +32,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
+      <Footer />
     </div>
   );
 }
