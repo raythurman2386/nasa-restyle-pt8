@@ -23,7 +23,7 @@ const Maincontent = ({ date }) => {
       .catch(err => console.log(err));
   }, [date]);
 
-  console.log(data);
+  // console.log(data);
 
   // try to implement loader here
   if (!data) return <ReactLoader data={data} />;
