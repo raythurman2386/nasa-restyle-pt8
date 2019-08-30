@@ -21,6 +21,8 @@ const Maincontent = ({ date }) => {
       .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`)
       .then(res => setData(res.data))
       .catch(err => console.log(err));
+
+    // Pass date so it only renders on date change
   }, [date]);
 
   // console.log(data);
@@ -33,6 +35,7 @@ const Maincontent = ({ date }) => {
       <Title title={data.title} />
       <p className='text-center'>{data.date}</p>
 
+      {/* Render the proper media type */}
       {data.media_type === 'image' ? (
         <Image image={data.url} />
       ) : (
