@@ -1,7 +1,7 @@
 import React from 'react';
 import Loader from 'react-loader';
 
-const ReactLoader = ({ date }) => {
+const ReactLoader = () => {
   return (
     <div>
       <Loader loaded={false} className='spinner' />
