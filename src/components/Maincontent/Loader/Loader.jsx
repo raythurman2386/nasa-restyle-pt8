@@ -1,10 +1,10 @@
 import React from 'react';
 import Loader from 'react-loader';
 
-const ReactLoader = ({ data }) => {
+const ReactLoader = ({ date }) => {
   return (
     <div>
-      <Loader loaded={false} className='' />
+      <Loader loaded={false} className='spinner' />
     </div>
   );
 };
