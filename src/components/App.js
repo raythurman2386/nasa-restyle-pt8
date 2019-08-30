@@ -15,7 +15,7 @@ function App() {
   return (
     <div className='h-screen'>
       <Header date={date} setDate={setDate} />
-      <Maincontent date={date} setDate={setDate} />
+      <Maincontent date={date} />
       <Footer />
     </div>
   );

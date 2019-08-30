@@ -28,7 +28,7 @@ const Maincontent = ({ date }) => {
   // console.log(data);
 
   // try to implement loader here
-  if (!data) return <ReactLoader data={data} />;
+  if (!data) return <ReactLoader />;
 
   return (
     <div className='flex flex-col align-center h-auto m-6'>
