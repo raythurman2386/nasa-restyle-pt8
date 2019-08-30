@@ -19,7 +19,9 @@ const Maincontent = ({ date }) => {
   useEffect(() => {
     axios
       .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`)
+      // set data to state
       .then(res => setData(res.data))
+      // log any errors to the console
       .catch(err => console.log(err));
 
     // Pass date so it only renders on date change
